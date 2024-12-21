@@ -25,6 +25,14 @@ public class Main {
         System.out.println("Минимальная сумма трат за неделю составила " + minAmount + " рублей");
         System.out.println("Максимальная сумма трат за неделю составила " + maxAmount + " рублей");
 
-
+        System.out.println();
+        System.out.println("Задание №3");
+        int[] amountOfMoney1 = {20000, 30000, 15000, 25000, 60000};
+        int sum1 = 0;
+        int numbersOfWeeks=5;
+        for (int element : amountOfMoney1) {
+            sum1 += element/numbersOfWeeks;
+        }
+        System.out.println("Средняя сумма трат за месяц составила " + sum1 + " рублей");
     }
 }
