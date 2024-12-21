@@ -9,5 +9,22 @@ public class Main {
         }
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
 
+        System.out.println();
+        System.out.println("Задание №2");
+        int[] weeklyExpenses = {5000, 15000, 5500, 4000, 7000, 3500, 20000};
+        int maxAmount = -1;
+        int minAmount = 0;
+        for (final int element : weeklyExpenses) {
+            if (element > maxAmount) {
+                maxAmount = element;
+            }
+            if (element < maxAmount) {
+                minAmount = element;
+            }
+        }
+        System.out.println("Минимальная сумма трат за неделю составила " + minAmount + " рублей");
+        System.out.println("Максимальная сумма трат за неделю составила " + maxAmount + " рублей");
+
+
     }
 }
