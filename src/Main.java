@@ -34,5 +34,22 @@ public class Main {
             sum1 += element/numbersOfWeeks;
         }
         System.out.println("Средняя сумма трат за месяц составила " + sum1 + " рублей");
+
+        System.out.println();
+        System.out.println("Задание №4");
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I' };
+        int left = 0;
+        int right = reverseFullName.length - 1;
+        while (left < right)
+        {
+            char name = reverseFullName[left];
+            reverseFullName[left] = reverseFullName[right];
+            reverseFullName[right] = name;
+
+            left++;
+            right--;
+        }
+
+        System.out.println(reverseFullName);
     }
 }
