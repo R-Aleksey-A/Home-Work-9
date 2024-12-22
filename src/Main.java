@@ -8,6 +8,5 @@ public class Main {
             sum += element;
         }
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
-
     }
 }
