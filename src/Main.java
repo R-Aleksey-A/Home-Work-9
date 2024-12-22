@@ -11,14 +11,14 @@ public class Main {
 
         System.out.println();
         System.out.println("Задание №2");
-        int[] weeklyExpenses = {5000, 15000, 5500, 4000, 7000, 3500, 20000};
-        int maxAmount = -1;
-        int minAmount = 0;
+        int[] weeklyExpenses = {5000, 35000, 5500, 1000, 2000, 3500, 20000};
+        int maxAmount =weeklyExpenses[2];
+        int minAmount=weeklyExpenses [1];
         for (final int element : weeklyExpenses) {
             if (element > maxAmount) {
                 maxAmount = element;
             }
-            if (element < maxAmount) {
+            if (element < minAmount) {
                 minAmount = element;
             }
         }
