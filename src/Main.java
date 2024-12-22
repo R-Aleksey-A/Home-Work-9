@@ -31,8 +31,9 @@ public class Main {
         int sum1 = 0;
         int numbersOfWeeks=5;
         for (int element : amountOfMoney1) {
-            sum1 += element/numbersOfWeeks;
+            sum1 += element;
         }
-        System.out.println("Средняя сумма трат за месяц составила " + sum1 + " рублей");
+
+        System.out.println("Средняя сумма трат за месяц составила " + sum1/numbersOfWeeks + " рублей");
     }
 }
