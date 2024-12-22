@@ -11,14 +11,14 @@ public class Main {
 
         System.out.println();
         System.out.println("Задание №2");
-        int[] weeklyExpenses = {5000, 15000, 5500, 4000, 7000, 3500, 20000};
-        int maxAmount = -1;
-        int minAmount = 0;
+        int[] weeklyExpenses = {5000, 35000, 5500, 1000, 2000, 3500, 20000};
+        int maxAmount = weeklyExpenses[2];
+        int minAmount = weeklyExpenses[1];
         for (final int element : weeklyExpenses) {
             if (element > maxAmount) {
                 maxAmount = element;
             }
-            if (element < maxAmount) {
+            if (element < minAmount) {
                 minAmount = element;
             }
         }
@@ -27,21 +27,22 @@ public class Main {
 
         System.out.println();
         System.out.println("Задание №3");
-        int[] amountOfMoney1 = {20000, 30000, 15000, 25000, 60000};
+        int[] amountOfMoney1 = {20000, 30000, 15000, 25000, 1};
         int sum1 = 0;
-        int numbersOfWeeks=5;
+        int numbersOfWeeks = amountOfMoney1.length;
         for (int element : amountOfMoney1) {
-            sum1 += element/numbersOfWeeks;
+            sum1 += element;
+
         }
-        System.out.println("Средняя сумма трат за месяц составила " + sum1 + " рублей");
+        System.out.println("Средняя сумма трат за месяц составила " + (double) sum1 / numbersOfWeeks + " рублей");
+
 
         System.out.println();
         System.out.println("Задание №4");
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I' };
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         int left = 0;
         int right = reverseFullName.length - 1;
-        while (left < right)
-        {
+        while (left < right) {
             char name = reverseFullName[left];
             reverseFullName[left] = reverseFullName[right];
             reverseFullName[right] = name;
@@ -49,7 +50,6 @@ public class Main {
             left++;
             right--;
         }
-
         System.out.println(reverseFullName);
     }
 }
